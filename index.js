@@ -15,13 +15,9 @@ function fuzzyMatch(drivers, name) {
     return newDrivers;
 }
 
-function matchName(collection){
-    // const matchDriver = drivers.filter(function filter (collection){
-    // for (const drivers of collection){
-    //     if (drivers.filter(driver => driver.toLowerCase() == name.toLowerCase())){
-    //        console.log(driver);
-    //         // return drivers;
+function matchName(collection, name){
+    return collection.filter(function (driver){
 
-    //     }
-    // }
+    return  driver.name.toLowerCase() == name.toLowerCase()
+     });
     }
